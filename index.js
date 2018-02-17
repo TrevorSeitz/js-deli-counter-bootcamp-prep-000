@@ -21,13 +21,28 @@ function currentLine(line) {
   if (line.length < 1) {
     return "The line is currently empty.";
   } else {
-    var numLine = 'The line is currently: ';
-    for (var i = 1; i <= line.length; i++) {
-      var fullLine = numLine.push(i + ": " + line(i - 1))
+    var numLine = 'The line is currently: ',
+        custArray = [];
+
+    console.log(line);
+    for (var i = 0; i < line.length; i++) {
+      custArray.push(i + 1 + ": " + line[i]);
     }
-    // return katzDeliLine;
+    console.log(numLine + custArray.join(', '));
   }
 }
+
+// function currentLine(line) {
+//   if (line.length < 1) {
+//     return "The line is currently empty.";
+//   } else {
+//     var numLine = 'The line is currently: ';
+//     for (var i = 1; i <= line.length; i++) {
+//       var fullLine = numLine.push(i + ": " + line(i - 1))
+//     }
+//     // return katzDeliLine;
+//   }
+// }
 
 // for(var i=0; i<line.length; i++) {
 //   lineNamesandNumbers.push(i+1 + ". "+ line[i]);
