@@ -23,12 +23,10 @@ function currentLine(line) {
   } else {
     var numLine = 'The line is currently: ',
         custArray = [];
-
-    console.log(line);
     for (var i = 0; i < line.length; i++) {
       custArray.push(i + 1 + ": " + line[i]);
     }
-    console.log(numLine + custArray.join(', '));
+    return (numLine + custArray.join(', '));
   }
 }
 
