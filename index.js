@@ -1,7 +1,7 @@
 function takeANumber(line, customer) {
   // console.log(customer,);
   line.push(customer);
-  var place = line.indexOf(customer);
+  var place = line.indexOf(customer) + 1;
   // console.log(line.indexOf(customer));
   //
   // console.log(line);
