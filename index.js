@@ -1,5 +1,5 @@
 function takeANumber(katzDeliLine, customer) {
-  var place = katzDeliLine.indexOf(customer);
+  var place = katzDeliLine.indexOf(customer) + 2;
 
   katzDeliLine.push(customer);
   return 'Welcome, Ada. You are number ' + place + ' in line.';
