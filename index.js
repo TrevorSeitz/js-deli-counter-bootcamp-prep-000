@@ -1,6 +1,6 @@
 function takeANumber(katzDeliLine, customer) {
   katzDeliLine.push(customer);
-  return (katzDeliLine.index)f(customer) + 1);
+  return (katzDeliLine.indexOf(customer) + 1);
 }
 
 function nowServing(katzDeliLine) {
