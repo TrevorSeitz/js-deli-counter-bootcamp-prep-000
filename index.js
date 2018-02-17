@@ -24,7 +24,7 @@ function currentLine(line) {
     var numLine = 'The line is currently: ',
         custArray = [];
     for (var i = 0; i < line.length; i++) {
-      custArray.push(i + 1 + ": " + line[i]);
+      custArray.push(i + 1 + ". " + line[i]);
     }
     return (numLine + custArray.join(', '));
   }
