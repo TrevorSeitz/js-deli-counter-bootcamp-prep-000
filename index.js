@@ -1,7 +1,7 @@
 function takeANumber(katzDeliLine, customer) {
   katzDeliLine.push(customer);
   return (katzDeliLine.indexof(customer) + 1);
-  
+
 }
 
 function nowServing(katzDeliLine) {
@@ -18,6 +18,6 @@ function currentLine(katzDeliLine) {
     return "The line is currently empty.";
   } else {
     return katzDeliLine;
-    
+
   }
 }
