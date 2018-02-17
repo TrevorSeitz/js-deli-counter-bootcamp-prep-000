@@ -14,7 +14,9 @@ function nowServing(line) {
     return "There is nobody waiting to be served!";
   } else {
     var serving = line[0];
+    console.log(line);
     line = line.slice(1);
+    console.log(line);
     return 'Currently serving ' + serving + '.';
   }
 }
