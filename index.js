@@ -13,10 +13,11 @@ function nowServing(line) {
   if (line.length < 1) {
     return "There is nobody waiting to be served!";
   } else {
-    var serving = line[0];
-    line.slice(1);
-    console.log(line);
-    return 'Currently serving ' + serving + '.';
+    // var serving = line[0];
+    // line.slice(1);
+    // console.log(line);
+    // return 'Currently serving ' + serving + '.';
+    return 'Currently serving ' + line.shift() + '.';
   }
 }
 
