@@ -15,7 +15,7 @@ function nowServing(line) {
   } else {
     var serving = line[0];
     console.log(line);
-    line = line.slice(1);
+    line = line.slice(0);
     console.log(line);
     return 'Currently serving ' + serving + '.';
   }
