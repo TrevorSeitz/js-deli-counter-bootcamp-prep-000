@@ -1,7 +1,10 @@
-function takeANumber(katzDeliLine, customer) {
-  var place = katzDeliLine.indexOf(customer) + 2;
-
-  katzDeliLine.push(customer);
+function takeANumber(line, customer) {
+  // console.log(customer,);
+  line.push(customer);
+  var place = line.indexOf(customer);
+  // console.log(line.indexOf(customer));
+  //
+  // console.log(line);
   return 'Welcome, ' + customer + '. You are number ' + place + ' in line.';
 
 }
