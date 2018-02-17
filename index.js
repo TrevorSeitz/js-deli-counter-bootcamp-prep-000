@@ -9,28 +9,28 @@ function takeANumber(line, customer) {
 
 }
 
-// function nowServing(line) {
-//   if (line.length < 1) {
-//     return "There is nobody waiting to be served!";
-//   } else {
-//     var serving = line[0];
-//     console.log(line);
-//     line = line.slice(0);
-//     console.log(line);
-//     return 'Currently serving ' + serving + '.';
-//   }
-// }
-
-function nowServing(katzDeliLine) {
-  if (katzDeliLine.length < 1) {
+function nowServing(line) {
+  if (line.length < 1) {
     return "There is nobody waiting to be served!";
   } else {
-    var serving = katzDeliLine[0];
-    katzDeliLine = katzDeliLine.slice(0);
-    console.log(katzDeliLine);
+    var serving = line[0];
+    console.log(line);
+    line = line.slice(0);
+    console.log(line);
     return 'Currently serving ' + serving + '.';
   }
 }
+
+// function nowServing(katzDeliLine) {
+//   if (katzDeliLine.length < 1) {
+//     return "There is nobody waiting to be served!";
+//   } else {
+//     var serving = katzDeliLine[0];
+//     katzDeliLine = katzDeliLine.slice(0);
+//     console.log(katzDeliLine);
+//     return 'Currently serving ' + serving + '.';
+//   }
+// }
 
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length < 1) {
