@@ -13,18 +13,25 @@ function nowServing(line) {
   if (line.length < 1) {
     return "There is nobody waiting to be served!";
   } else {
-    // var serving = line[0];
-    // line.slice(1);
-    // console.log(line);
-    // return 'Currently serving ' + serving + '.';
     return 'Currently serving ' + line.shift() + '.';
   }
 }
 
-function currentLine(katzDeliLine) {
-  if (katzDeliLine.length < 1) {
+function currentLine(line) {
+  if (line.length < 1) {
     return "The line is currently empty.";
   } else {
-    return katzDeliLine;
+    var numLine = 'The line is currently: ';
+    for (var i = 1; i <= line.length; i++) {
+      var fullLine = numLine.push(i + ": " + line(i - 1))
+    }
+    // return katzDeliLine;
   }
+}
+
+// for(var i=0; i<line.length; i++) {
+//   lineNamesandNumbers.push(i+1 + ". "+ line[i]);
+// }
+console.log("The line is currently: " + lineNamesandNumbers)
+return "The line is currently: " + lineNamesandNumbers.join(', ');
 }
